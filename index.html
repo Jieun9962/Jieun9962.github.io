@@ -215,19 +215,19 @@
      <input type="text" aria-label=" ">
      <select name="" id="" aria-label=" "></select>
      <textarea name="" id="" aria-label=" "></textarea>
-    <p>33. input/ select/ textarea 태그에 label 미제공이고 aria-labelledby 빈값 - fail </p>
-     <input type="text" aria-labelledby="id17">
+    <p>33. input/ select/ textarea 태그에 label 미제공이고 aria-labelledby 빈값 - fail (코드 수정 _ aria-labelledby가 빈값이 아니였음)</p>
+     <input type="text" aria-labelledby="">
      <span id="id17"></span>
-     <select name="" id="" aria-labelledby="id18"></select>
+     <select name="" id="" aria-labelledby=""></select>
      <span id="id18"></span>
-     <textarea name="" id="" aria-labelledby="id19"></textarea>
+     <textarea name="" id="" aria-labelledby=""></textarea>
      <span id="id19"></span>
-    <p>34. input/ select/ textarea 태그에 label 미제공이고 aria-labelledby에 띄어쓰기만 - fail </p>
-     <input type="text" aria-labelledby="id20">
+    <p>34. input/ select/ textarea 태그에 label 미제공이고 aria-labelledby에 띄어쓰기만 (코드 수정 _ aria-labelledby에 빈값이 아닌 값 제공되어 있었음)- fail </p>
+     <input type="text" aria-labelledby=" ">
      <span id="id20"> </span>
-     <select name="" id="" aria-labelledby="id21"></select>
+     <select name="" id="" aria-labelledby=" "></select>
      <span id="id21"> </span>
-     <textarea name="" id="" aria-labelledby="id22"></textarea>
+     <textarea name="" id="" aria-labelledby=" "></textarea>
      <span id="id22"> </span>
     <p>35. input/ select/ textarea 태그에 label 미제공이고 aria-label, title 제공 - pass </p>
 
@@ -297,7 +297,7 @@
 
 
 
-    <p>37. input/ select/ textarea 태그에 label 미제공, title 제공,aria-label에 무의미한 단어제공됨  - PASS </p>
+    <p>39. input/ select/ textarea 태그에 label 미제공, title 제공,aria-label에 무의미한 단어제공됨  - PASS </p>
      <input type="text" title="phone number" aria-label="text">
      <input type="radio" title="phone number2" aria-label="radio">
      <input type="file" title="phone number2" aria-label="file">
@@ -315,4 +315,5 @@
 
 </body>
 </html>
+
 
